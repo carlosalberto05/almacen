@@ -21,8 +21,10 @@ app.set("views", path.join(__dirname, "views"));
 
 // ************ Route System require and use() ************
 const mainRoutes = require("./routes/mainRoute");
+const productsRoutes = require("./routes/productsRoutes");
 
 app.use("/", mainRoutes);
+app.use("/products", productsRoutes);
 
 app.get("/", function (req, res) {
   res.send("Bienvenidos al sitio");
