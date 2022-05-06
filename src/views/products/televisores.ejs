@@ -25,54 +25,23 @@
 
           <div class="container">
             <div class="row">
+              <% for (let television of televisiones ) { %>
               <div class="col">
                 <article class="card" style="width: 18rem">
                   <a href="#">
-                    <img
-                      src="/images/televisores/samsung.jpg"
-                      class="card-img-top"
-                      alt="televisor"
-                    />
+                    <img src="/images/televisores/<%= television.imagen %>""
+                    class="card-img-top" alt="televisor" />
                   </a>
                   <div class="card-body">
-                    <h5 class="card-title">Pantalla Samsung</h5>
+                    <h5 class="card-title"><%= television.nombre %></h5>
                     <p class="card-text">Tipo de pantalla: LED</p>
-                    <p class="card-text">Tamaño de pantalla: 55 pulgadas</p>
+                    <p class="card-text">
+                      Precio: $<%= television.precio %>MXN
+                    </p>
                   </div>
                 </article>
               </div>
-              <div class="col">
-                <article class="card" style="width: 18rem">
-                  <a href="#">
-                    <img
-                      src="/images/televisores/samsung.jpg"
-                      class="card-img-top"
-                      alt="televisor"
-                    />
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Pantalla Samsung</h5>
-                    <p class="card-text">Tipo de pantalla: LED</p>
-                    <p class="card-text">Tamaño de pantalla: 55 pulgadas</p>
-                  </div>
-                </article>
-              </div>
-              <div class="col">
-                <article class="card" style="width: 18rem">
-                  <a href="#">
-                    <img
-                      src="/images/televisores/samsung.jpg"
-                      class="card-img-top"
-                      alt="televisor"
-                    />
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Pantalla Samsung</h5>
-                    <p class="card-text">Tipo de pantalla: LED</p>
-                    <p class="card-text">Tamaño de pantalla: 55 pulgadas</p>
-                  </div>
-                </article>
-              </div>
+              <% } %>
             </div>
           </div>
         </section>

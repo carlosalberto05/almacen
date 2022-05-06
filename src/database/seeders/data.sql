@@ -19,3 +19,11 @@ INSERT INTO productos VALUES (1,'Pantalla Samsung 40"', 0001, 9000, 'samsung.jpg
 
 INSERT INTO categorias_atributos VALUES (1, 1, 1, 2, 1),
 (2, 2, 4, 4, 2), (3, 3, 6, 8, 3);
+
+INSERT INTO productos VALUES (4,'Pantalla LG 32"', 0004, 8000, 'LG.jpg', 1, 2),
+(5,'Laptop Dell 15 pulgadas', 0005, 9849, 'dell.jpg', 2, 6),
+(6,'Tenis Charly', 0006, 749, 'charly.jpg', 3, 12);
+
+INSERT INTO productos VALUES (7,'Pantalla Sony 32"', 0007, 8000, 'sony.jpg', 1, 3),
+(8,'Macbook Pro 15 pulgadas', 0008, 9950, 'apple.jpg', 2, 5),
+(9,'Casual Flexi hombre', 0009, 949, 'botas.jpg', 3, 10);

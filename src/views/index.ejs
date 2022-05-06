@@ -35,7 +35,9 @@
                   <div class="card-body">
                     <h5 class="card-title"><%= television.nombre %></h5>
                     <p class="card-text">Tipo de pantalla: LED</p>
-                    <p class="card-text">Tamaño de pantalla: 55 pulgadas</p>
+                    <p class="card-text">
+                      Precio: $<%= television.precio %>MXN
+                    </p>
                   </div>
                 </article>
               </div>
@@ -48,54 +50,21 @@
           <h2 class="section-laptops_title mt-3 mb-3 text-center">Laptops</h2>
           <div class="container">
             <div class="row">
+              <% for (let laptop of laptops ) { %>
               <div class="col">
                 <article class="card" style="width: 18rem">
                   <a href="#">
-                    <img
-                      src="/images/laptops/asus.jpg"
-                      class="card-img-top"
-                      alt="laptops"
-                    />
+                    <img src="/images/laptops/<%= laptop.imagen %>""
+                    class="card-img-top" alt="televisor" />
                   </a>
                   <div class="card-body">
-                    <h5 class="card-title">Laptops ASUS</h5>
+                    <h5 class="card-title"><%= laptop.nombre %></h5>
                     <p class="card-text">Procesador: Intel</p>
-                    <p class="card-text">Memoria Ram: 8 GB</p>
+                    <p class="card-text">Precio: $<%= laptop.precio %>MXN</p>
                   </div>
                 </article>
               </div>
-              <div class="col">
-                <article class="card" style="width: 18rem">
-                  <a href="#">
-                    <img
-                      src="/images/laptops/asus.jpg"
-                      class="card-img-top"
-                      alt="laptops"
-                    />
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Laptops ASUS</h5>
-                    <p class="card-text">Procesador: Intel</p>
-                    <p class="card-text">Memoria Ram: 8 GB</p>
-                  </div>
-                </article>
-              </div>
-              <div class="col">
-                <article class="card" style="width: 18rem">
-                  <a href="#">
-                    <img
-                      src="/images/laptops/asus.jpg"
-                      class="card-img-top"
-                      alt="laptops"
-                    />
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Laptops ASUS</h5>
-                    <p class="card-text">Procesador: Intel</p>
-                    <p class="card-text">Memoria Ram: 8 GB</p>
-                  </div>
-                </article>
-              </div>
+              <% } %>
             </div>
           </div>
         </section>
@@ -104,54 +73,21 @@
           <h2 class="section-laptops_title mt-3 mb-3 text-center">Zapatos</h2>
           <div class="container">
             <div class="row">
+              <% for (let zapato of zapatos ) { %>
               <div class="col">
                 <article class="card" style="width: 18rem">
                   <a href="#">
-                    <img
-                      src="/images/zapatos/Suede.jpg"
-                      class="card-img-top"
-                      alt="laptops"
-                    />
+                    <img src="/images/zapatos/<%= zapato.imagen %>""
+                    class="card-img-top" alt="televisor" />
                   </a>
                   <div class="card-body">
-                    <h5 class="card-title">Zapatos Suede</h5>
+                    <h5 class="card-title"><%= zapato.nombre %></h5>
                     <p class="card-text">Material: Piel</p>
-                    <p class="card-text">Número: 8</p>
+                    <p class="card-text">Precio: $<%= zapato.precio %>MXN</p>
                   </div>
                 </article>
               </div>
-              <div class="col">
-                <article class="card" style="width: 18rem">
-                  <a href="#">
-                    <img
-                      src="/images/zapatos/Suede.jpg"
-                      class="card-img-top"
-                      alt="laptops"
-                    />
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Zapatos Suede</h5>
-                    <p class="card-text">Material: Piel</p>
-                    <p class="card-text">Número: 8</p>
-                  </div>
-                </article>
-              </div>
-              <div class="col">
-                <article class="card" style="width: 18rem">
-                  <a href="#">
-                    <img
-                      src="/images/zapatos/Suede.jpg"
-                      class="card-img-top"
-                      alt="laptops"
-                    />
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Zapatos Suede</h5>
-                    <p class="card-text">Material: Piel</p>
-                    <p class="card-text">Número: 8</p>
-                  </div>
-                </article>
-              </div>
+              <% } %>
             </div>
           </div>
         </section>
